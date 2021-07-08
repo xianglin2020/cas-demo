@@ -1,0 +1,12 @@
+server:
+  port: 7443
+  ssl:
+    key-store: classpath:thekeystore
+    key-store-password: changeit
+    key-store-type: pkcs12
+    key-alias: cas
+
+cas:
+  server-url-prefix: https://cas.server.com:8443/cas
+  server-login-url: https://cas.server.com:8443/cas/login
+  client-host-url: https://client1.server.com:7443/
